@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form Showcase</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Community Event</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>Join us for an exciting community event featuring workshops, talks, and networking opportunities.</p>
+            <h3>Event Highlights</h3>
+            <ul>
+                <li>Interactive workshops on technology and innovation</li>
+                <li>Guest speakers from industry leaders</li>
+                <li>Networking sessions with professionals</li>
+                <li>Live demonstrations and exhibitions</li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM - 10:00 AM</td>
+                        <td>Registration & Breakfast</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Keynote Speech</td>
+                        <td>Auditorium</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Workshops</td>
+                        <td>Rooms A-C</td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM - 5:00 PM</td>
+                        <td>Networking Session</td>
+                        <td>Lobby</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="media">
+            <h2>Event Media</h2>
+            <h3>Promotional Video</h3>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Event Audio Introduction</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="register">
+            <h2>Register for the Event</h2>
+            <form action="/submit" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required minlength="2" maxlength="50" placeholder="Enter your full name" autocomplete="name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel" pattern="[0-9]{10,15}">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event Preferences</legend>
+                    <label for="workshop">Preferred Workshop:</label>
+                    <select id="workshop" name="workshop" required>
+                        <option value="">Select a workshop</option>
+                        <option value="tech">Technology Trends</option>
+                        <option value="innovation">Innovation Strategies</option>
+                        <option value="networking">Networking Skills</option>
+                    </select>
+
+                    <label for="diet">Dietary Restrictions:</label>
+                    <input type="text" id="diet" name="diet" placeholder="e.g., Vegetarian, Gluten-Free" maxlength="100">
+
+                    <label for="attendance-date">Attendance Date:</label>
+                    <input type="date" id="attendance-date" name="attendance-date" required min="2025-08-10" max="2025-08-15">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments or Questions:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Any additional information or questions" maxlength="500"></textarea>
+
+                    <label for="newsletter">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </fieldset>
+
+                <input type="submit" value="Register Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Community Event. All rights reserved.</p>
+    </footer>
+</body>
+</html>
